@@ -1,0 +1,36 @@
+#introCard{
+    min-height: 80vh;
+    margin: 20px;
+    text-align: center;
+}
+
+#introCard .allContent{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#introCard .mainTitle{
+    padding-top: 10%;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+#introCard .subTitle{
+    font-size: 40px;
+    font-weight: normal;
+}
+
+#introCard .description{
+    font-size: 35px;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding-top: 5%;
+
+}
+
+#introCard .signUp{
+    padding:10px 50px;
+    font-size: 20px;
+    background-color: #ffffffc9;
+    border-radius: 24px;
+}

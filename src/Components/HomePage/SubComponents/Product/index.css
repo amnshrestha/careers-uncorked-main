@@ -1,0 +1,45 @@
+#ListOfProducts .eachProductCard{
+    min-height: 80vh;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+#ListOfProducts .productImage{
+    width: 350px;
+    border-radius: 50%;
+}
+
+#ListOfProducts .textArea{
+    width: 80%;
+    color: white;
+
+    /* top right bottom left*/
+    padding: 20px 50px 0 40px;
+}
+
+#ListOfProducts .mainTitle{
+    font-weight: bold;
+    font-size: 70px;
+}
+
+#ListOfProducts .subTitle{
+    font-size: 50px;
+}
+
+#ListOfProducts .description{
+    font-size: 20px;
+}
+#ListOfProducts .product-button{
+}
+
+#ListOfProducts .imageArea{
+    margin: auto;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+}
+
+#ListOfProducts .imageDescription{
+    padding-top: 20px;
+}

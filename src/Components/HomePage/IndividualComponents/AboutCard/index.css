@@ -1,0 +1,35 @@
+#aboutCard{
+    height: 80vh;
+    margin: 20px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid black;
+}
+
+#aboutCard .logoArea{
+    background-color: white;
+    margin: auto;
+}
+
+#aboutCard .mainLogo{
+    width: 80%;
+}
+
+#aboutCard .allContent{
+    text-align: left;
+    padding:50px 100px 0 50px;
+}
+
+
+#aboutCard .mainTitle{
+    font-weight: bold;
+    font-size: 50px;
+}
+#aboutCard .subTitle{
+    font-size: 30px;
+}
+#aboutCard .description{
+    padding-top: 50px;
+    font-size: 20px;
+}
