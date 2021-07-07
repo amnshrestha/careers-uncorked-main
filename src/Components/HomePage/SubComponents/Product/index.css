@@ -20,7 +20,8 @@
 
 #ListOfProducts .mainTitle{
     font-weight: bold;
-    font-size: 70px;
+    font-size: 65px;
+    line-height: 80px;
 }
 
 #ListOfProducts .subTitle{
@@ -31,8 +32,22 @@
     font-size: 20px;
 }
 #ListOfProducts .product-button{
+    padding:10px 50px;
+    font-size: 20px;
+    background-color: #ffffffc9;
+    border-radius: 24px;
+    margin-bottom: 40px;
 }
-
+#ListOfProducts .listOfLogos{
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#ListOfProducts .smallLogo{
+    max-width: 150px;
+    max-height: 80px;
+    padding-right: 10px;
+}
 #ListOfProducts .imageArea{
     margin: auto;
     color: white;

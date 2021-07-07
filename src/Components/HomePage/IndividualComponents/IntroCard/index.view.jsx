@@ -20,7 +20,9 @@ const IntroCard = () => {
                 <div className="mainTitle">CAREERS UNCORKED</div>
                 <div className="subTitle">ONE COMMUNITY, WHERE JOURNEYS CONVERGE</div>
                 <p className="description">Sign up to our mailing list to receive reminder for our upcoming events</p>
-                <button type="button" class="btn btn-light signUp">Sign Up</button>
+                <a href="#">
+                    <button type="button" class="btn btn-light signUp">Sign Up</button>
+                </a>
             </div>
         </section>
     )
