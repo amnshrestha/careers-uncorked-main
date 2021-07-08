@@ -9,9 +9,14 @@ import "./index.css"
 import ContactFooter from '../ContactFooter'
 import $ from 'jquery';
 
-import "./storiesHelper"
 
 const StoriesPage = () => {
+
+    const changeNavColor = ()=>{
+        $(".navbar").css("background-color","#FFE696")
+    }
+    changeNavColor();
+
     const [currentVideo, setcurrentVideo] = useState("");
 
     var listOfStories = FetchStoriesFromYoutube()

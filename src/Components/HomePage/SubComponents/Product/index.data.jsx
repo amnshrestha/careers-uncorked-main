@@ -41,7 +41,7 @@ const allProducts = [
             }
         ],
         buttonText:"View Livestream",
-        buttonLink:"#",
+        buttonLink:"/#/stories",
         mainPic:SharfuzAndSid,
         pictureName:"Sharfuz Sifat & Sidhant Ahluwalia",
         picturePosition:"Co-Hosts",

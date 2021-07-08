@@ -1,0 +1,64 @@
+#PodcastPage .pageTitle{
+    width: 100%;
+    text-align: center;
+    border: 1px solid black;
+    background-color: #4A4848;
+    color: white;
+    margin-top: 32px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#PodcastPage .podcastLogoContainer{
+    width: 300px;
+    height: 300px;
+    margin:16px auto;
+    overflow: hidden;
+
+}
+
+
+#PodcastPage .podcastLogo{
+    width: 300px;
+    height: 300px;
+    margin:0 auto;
+    border-radius: 50%;
+}
+
+#PodcastPage .description{
+    width: 50%;
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#PodcastPage .podcastEpisodes{
+    width: 60%;
+    margin: 0 auto;
+}
+
+#PodcastPage .eachEpisode{
+    margin: 10px auto;
+}
+
+#PodcastPage .tuneIn{
+    width: 180px;
+    font-size: 20px;
+    background-color: #ffffffc9;
+    border-radius: 24px;
+    margin: 0 auto;
+}
+
+#PodcastPage .tuneInDiv{
+    width: 180px;
+    margin: 40px auto;
+}
+
+@media only screen and (max-width: 600px) {
+    #PodcastPage .description{
+        width: 80%;
+        font-size: 20px;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
