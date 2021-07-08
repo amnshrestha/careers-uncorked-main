@@ -10,7 +10,6 @@ const FetchStoriesFromYoutube = () =>{
 
     useEffect(() => {
         
-        const url = "confidential";
         FetchService.GET(url)
         .then((res) => {
             if(Object.keys(res).length > 0 && !dataFound){
@@ -25,15 +24,18 @@ const FetchStoriesFromYoutube = () =>{
         var mainArray = [];
         if(Object.keys(allData).length > 0){
             allData.map((eachVideo) => {
-                console.log(eachVideo);
                 var title = eachVideo.snippet.title;
                 var description = eachVideo.snippet.description;
                 var videoID = eachVideo.snippet.resourceId.videoId;
+                var modalID = "#"+eachVideo.snippet.resourceId.videoId;
+                var videoURL = "https://www.youtube.com/embed/"+eachVideo.snippet.resourceId.videoId;
                 var thumbnailURL = eachVideo.snippet.thumbnails.standard.url;
                 var toAppend = {
                     "title":title,
                     "description":description,
                     "videoID":videoID,
+                    "modalID":modalID,
+                    "videoURL":videoURL,
                     "thumbnailURL": thumbnailURL,
                 }
                 mainArray.push(toAppend);
