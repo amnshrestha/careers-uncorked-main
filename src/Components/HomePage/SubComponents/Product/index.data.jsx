@@ -68,7 +68,7 @@ const allProducts = [
         logos:[
             {
                 logoImage:applePodcast,
-                logoLink:"#"
+                logoLink:"/#/podcast"
             },
             {
                 logoImage:spotify,

@@ -36,7 +36,7 @@ const NavBar = () => {
                             <a className="nav-link nostyle" aria-current="page" href="/#/stories">Stories</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link nostyle" aria-current="page" href="#">Podcast</a>
+                            <a className="nav-link nostyle" aria-current="page" href="/#/podcast">Podcast</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link nostyle" aria-current="page" href="#">Blogs</a>

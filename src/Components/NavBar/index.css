@@ -15,6 +15,10 @@ a.nostyle:active{
     text-decoration: none;
 }
 
+.navbar{
+    transition-duration: 1s;
+}
+
 
 
 .nav-item{
