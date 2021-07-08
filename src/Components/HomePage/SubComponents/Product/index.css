@@ -1,5 +1,9 @@
+#ListOfProductsMobile{
+    display: none;
+}
+
 #ListOfProducts .eachProductCard{
-    min-height: 80vh;
+    min-height: 70vh;
     margin: 20px;
     display: grid;
     grid-template-columns: 60% 40%;
@@ -25,10 +29,12 @@
 }
 
 #ListOfProducts .subTitle{
+    padding-top: 2%;
     font-size: 50px;
 }
 
 #ListOfProducts .description{
+    padding-top: 5%;
     font-size: 20px;
 }
 #ListOfProducts .product-button{
@@ -57,4 +63,84 @@
 
 #ListOfProducts .imageDescription{
     padding-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #ListOfProducts{
+        display: none;
+    }
+
+    #ListOfProductsMobile{
+        display: block;
+    }
+    
+    #ListOfProductsMobile .eachProductCard{
+        margin: 5px;
+        color: white;
+        padding:20px 10px 0 10px;
+    }
+    
+    #ListOfProductsMobile .productImage{
+        width: 150px;
+        border-radius: 50%;
+    }
+    
+    #ListOfProductsMobile .eachProductImage{
+        width: 150px;
+        margin: 0 auto;
+        margin-top: 5px;
+    }
+
+    #ListOfProductsMobile .mainTitle{
+        font-weight: bold;
+        font-size: 40px;
+        text-align: center;
+    }
+    
+    #ListOfProductsMobile .subTitle{
+        padding-top: 2%;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    #ListOfProductsMobile .description{
+        padding-top: 5%;
+        font-size: 15px;
+    }
+    #ListOfProductsMobile .listOfLogos{
+        padding: 20px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #ListOfProductsMobile .smallLogo{
+        max-width: 100px;
+        max-height: 80px;
+        padding-right: 10px;
+    }
+
+    #ListOfProductsMobile .listOfLogos{
+        width: 300px;
+        margin: 0 auto;
+    }
+    
+    #ListOfProductsMobile .imageDescription{
+        padding-top: 20px;
+        text-align: center;
+    }
+
+
+    #ListOfProductsMobile .product-button{
+        width: 180px;
+        font-size: 15px;
+        background-color: #ffffffc9;
+        border-radius: 24px;
+        margin-bottom: 40px;
+    }
+
+    #ListOfProductsMobile .buttonMobile{
+        width: 180px;
+        margin: 0 auto;
+    }
+
 }

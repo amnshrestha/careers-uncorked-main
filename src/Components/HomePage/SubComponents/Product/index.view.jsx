@@ -64,11 +64,67 @@ const ProductCard = () => {
             
         })
     }
+
+    const eachProductCardMobile= (productList)=>{
+        return productList.map(eachProduct=>{
+            const cardStyle = {
+                backgroundImage: `url(${eachProduct.backgroundImage})`,
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+            }
+            return (
+                <div className="eachProductCard" style ={cardStyle}>
+                    <div className="mainTitle">{eachProduct.title}</div>
+                    
+                    {eachProduct.subtitle && 
+                    <div className="subTitle">{eachProduct.subtitle}</div>
+                    }
+
+                    
+                    <div className="eachProductImage">
+                        <img src={eachProduct.mainPic} alt="productImage" className="productImage"/>
+                    </div>
+
+                        {eachProduct.pictureName &&
+                            eachProduct.picturePosition &&
+                                <p className="imageDescription">
+                                    {eachProduct.pictureName} 
+                                    <br/>
+                                    {eachProduct.picturePosition}
+                                </p>
+                        }
+
+                        {eachProduct.description && 
+                        <div className="description">{eachProduct.description}</div>
+                        }
+
+                        {eachProduct.logos &&
+                            <div className="listOfLogos">
+                                {logoSection(eachProduct.logos)}
+                            </div>
+                        }
+
+                        <div className="buttonMobile">
+                            <a href={eachProduct.buttonLink}>
+                                <button type="button" className="btn btn-light product-button">{eachProduct.buttonText}</button>
+                            </a>
+                        </div>
+                </div>
+            )
+            
+        })
+    }
     
     return (
+        <>
         <section id="ListOfProducts">
             {eachProductCard(allProducts)}
         </section>
+
+        <section id="ListOfProductsMobile">
+            {eachProductCardMobile(allProducts)}
+        </section>
+        </>
     )
 }
 

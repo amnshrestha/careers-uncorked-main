@@ -7,6 +7,10 @@
     border: 1px solid black;
 }
 
+#contactCardMobile{
+    display: none;
+}
+
 #contactCard .emailImage{
     width: 100%;
     max-height: 80vh;
@@ -36,4 +40,47 @@
     border-radius: 24px;
     border: 1px solid black;
 
+}
+
+@media only screen and (max-width: 600px) {
+
+    #contactCard{
+        display: none;
+    }
+
+    #contactCardMobile{
+        margin: 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border: 1px solid black;
+    }
+    
+    
+    #contactCardMobile .emailImage{
+        width: 100%;
+    }
+    
+    
+    #contactCardMobile .allContent{
+        text-align: left;
+        margin:20px 10px 0 5px;
+    }
+    
+    #contactCardMobile .mainTitle{
+        margin-top: 10%;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
+    #contactCardMobile .subTitle{
+        font-size: 15px;
+    }
+    
+    #contactCardMobile .signUp{
+        width: 100px;
+        font-size: 12px;
+        background-color: #ffffffc9;
+        border-radius: 24px;
+        border: 1px solid black;
+    }
 }

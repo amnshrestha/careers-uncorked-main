@@ -4,6 +4,10 @@
     text-align: center;
 }
 
+#introCardMobile{
+    display:none;
+}
+
 #introCard .allContent{
     width: 80%;
     margin: 0 auto;
@@ -34,3 +38,44 @@
     background-color: #ffffffc9;
     border-radius: 24px;
 }
+
+@media only screen and (max-width: 600px) {
+    #introCard{
+        display: none;
+    }
+    #introCardMobile{
+        margin: 5px;
+        display: block;
+        text-align: center;
+    }
+    
+    #introCardMobile .allContent{
+        margin: 0 auto;
+    }
+    
+    #introCardMobile .mainTitle{
+        font-size: 40px;
+        font-weight: bold;
+    }
+    
+    #introCardMobile .subTitle{
+        font-size: 18px;
+        font-weight: normal;
+    }
+    
+    #introCardMobile .description{
+        font-size: 15px;
+        font-weight: normal;
+        text-transform: uppercase;
+        padding-top: 5%;
+    
+    }
+    
+    #introCardMobile .signUp{
+        padding:5px 20px;
+        font-size: 15px;
+        background-color: #ffffffc9;
+        border-radius: 24px;
+        margin-bottom: 30px;
+    }
+  }

@@ -8,6 +8,10 @@
     overflow: scroll;
 }
 
+#aboutCardMobile{
+    display: none;
+}
+
 #aboutCard .logoArea{
     background-color: white;
     margin: auto;
@@ -33,4 +37,35 @@
 #aboutCard .description{
     padding-top: 50px;
     font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    #aboutCard{
+        display: none;
+    }
+
+    #aboutCardMobile{
+        display: block;
+        margin: 5px;
+        text-align: center;
+        border: 1px solid black;
+    }
+    
+    #aboutCardMobile .allContent{
+        text-align: center;
+        padding:20px 10px 0 10px;
+    }
+    
+    
+    #aboutCardMobile .mainTitle{
+        font-weight: bold;
+        font-size: 40px;
+    }
+    #aboutCardMobile .subTitle{
+        font-size: 25px;
+    }
+    #aboutCardMobile .description{
+        text-align: left;
+        font-size: 16px;
+    }
 }
