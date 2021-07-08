@@ -1,19 +1,18 @@
 import NavBar from "./Components/NavBar";
 
-import IntroCard from "./Components/HomePage/IndividualComponents/IntroCard";
-import AboutCard from "./Components/HomePage/IndividualComponents/AboutCard";
-import Product from "./Components/HomePage/SubComponents/Product";
-import ContactCard from "./Components/HomePage/IndividualComponents/ContactCard";
+import HomePage from "./Components/HomePage";
+import StoriesPage from "./Components/StoriesPage";
+
+import { BrowserRouter as Router, withRouter, Route, HashRouter } from 'react-router-dom';
+
 
 function App() {
   return (
-    <div className="App">
-      <NavBar/>
-      <IntroCard/>
-      <AboutCard/>
-      <Product/>
-      <ContactCard/>
-    </div>
+    <HashRouter basename='/'>
+        <NavBar/>
+        <Route exact path='/' component={HomePage} />
+        <Route exact path='/stories' component={StoriesPage} />
+    </HashRouter>
   );
 }
 

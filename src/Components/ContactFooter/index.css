@@ -1,0 +1,27 @@
+#ContactFooter{
+    background-color: #D1D0D0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 20vh;
+}
+
+#ContactFooter .leftSide{
+    margin: auto;
+}
+#ContactFooter .uncorkedTitle{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#ContactFooter .rightSide{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+}
+
+#ContactFooter .facebookIcon,
+#ContactFooter .linkedinIcon{
+    margin: auto;
+    margin-right: 20px;
+    width: 50px;
+}
