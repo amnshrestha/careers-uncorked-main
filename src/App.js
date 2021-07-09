@@ -16,11 +16,11 @@ function App() {
     <HashRouter basename='/'>
         <JoinUsModal/>
         <NavBar/>
-        <Route exact path='/' component={HomePage} />
-        <Route exact path='/stories' component={StoriesPage} />
-        <Route exact path='/podcast' component={PodcastPage} />
-        <Route exact path='/about' component={AboutPage} />
-        <Route exact path='/blogs' component={BlogsPage} />
+        <Route exact path= '/' component={HomePage} />
+        <Route exact path={process.env.PUBLIC_URL +'/stories'} component={StoriesPage} />
+        <Route exact path={process.env.PUBLIC_URL +'/podcast'} component={PodcastPage} />
+        <Route exact path={process.env.PUBLIC_URL +'/about'} component={AboutPage} />
+        <Route exact path={process.env.PUBLIC_URL +'/blogs'} component={BlogsPage} />
 
     </HashRouter>
   );
