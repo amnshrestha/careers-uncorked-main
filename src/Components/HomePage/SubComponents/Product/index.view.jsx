@@ -112,10 +112,10 @@ const ProductCard = () => {
 
                         <div className="buttonMobile">
                         {eachProduct.newTab ?
-                        <a href={eachProduct.buttonLink} target="_blank">
+                        <a href={process.env.PUBLIC_URL +eachProduct.buttonLink} target="_blank">
                             <button type="button" class="btn btn-light product-button">{eachProduct.buttonText}</button>
                         </a>:
-                        <a href={eachProduct.buttonLink} >
+                        <a href={process.env.PUBLIC_URL +eachProduct.buttonLink} >
                             <button type="button" class="btn btn-light product-button">{eachProduct.buttonText}</button>
                         </a>
                         }

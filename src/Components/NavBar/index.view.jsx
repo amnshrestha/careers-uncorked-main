@@ -30,16 +30,16 @@ const NavBar = () => {
                     </ul>
                     <ul className="navbar-nav mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <a className="nav-link nostyle" aria-current="page" href='/about'>About Us</a>
+                            <a className="nav-link nostyle" aria-current="page" href={process.env.PUBLIC_URL +'/#/about'}>About Us</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link nostyle" aria-current="page" href="/#/stories">Stories</a>
+                            <a className="nav-link nostyle" aria-current="page" href={process.env.PUBLIC_URL +'/#/stories'}>Stories</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link nostyle" aria-current="page" href="/#/podcast">Podcast</a>
+                            <a className="nav-link nostyle" aria-current="page" href={process.env.PUBLIC_URL +'/#/podcast'}>Podcast</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link nostyle" aria-current="page" href="/#/blogs">Blogs</a>
+                            <a className="nav-link nostyle" aria-current="page" href={process.env.PUBLIC_URL +'/#/blogs'}>Blogs</a>
                         </li>
                         <li className="nav-item" id="join-us-button" data-bs-toggle="modal" data-bs-target="#exampleModal" >
                             <a className="nav-link nostyle"  aria-current="page">Join Us</a>
