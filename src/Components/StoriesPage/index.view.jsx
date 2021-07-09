@@ -30,7 +30,7 @@ const StoriesPage = () => {
 
     // Pause the video when crossed is clicked on
     const closeVideo= ()=>{
-        $('iframe').attr('src', $('iframe').attr('src'));
+        $('#videoIframe').attr('src', $('#videoIframe').attr('src'));
     }
 
     const forEachStory = (listOfStories) => {
@@ -51,13 +51,14 @@ const StoriesPage = () => {
                             <button 
                             type="button" 
                             className="btn btn-light watchButton normalButton" 
-                            data-bs-toggle="modal" data-bs-target="#abc" 
+                            data-bs-toggle="modal" data-bs-target="#videoTarget" 
                             onClick={() => videoButtonClicked(eachStory.videoURL)}>
                                 <img src={YoutubeButton} alt="YoutubeIcon" className="youtubeButton"/>
                                 <span className="watchVideoText">Watch Video</span> 
                             </button>
 
-                            <button type="button" className="btn btn-light watchButton mobileButton" data-bs-toggle="modal" data-bs-target="#abc">
+                            <button type="button" 
+                            className="btn btn-light watchButton mobileButton" >
                                 <a href={eachStory.videoURL} >
                                     <img src={YoutubeButton} alt="YoutubeIcon" className="youtubeButton"/>
                                     <span className="watchVideoText">Watch Video</span>
@@ -72,11 +73,14 @@ const StoriesPage = () => {
     }
     const modal = ()=>{
         return (
-            <div className="modal fade" id="abc" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div className="modal fade" 
+            id="videoTarget" 
+            tabindex="-1" 
+            aria-labelledby="exampleModalLabel" 
+            aria-hidden="true">
                 <div className="modal-dialog">
                     <div className="modal-content">
                         <div className="modal-header">
-                            <h5 className="modal-title" id="exampleModalLabel">Test</h5>
                             <button 
                             type="button" 
                             className="btn-close" 
@@ -86,6 +90,7 @@ const StoriesPage = () => {
                         </div>
                         <div className="modal-body">
                             <iframe 
+                            id="videoIframe"
                             width="560" 
                             height="315" 
                             src={currentVideo}
