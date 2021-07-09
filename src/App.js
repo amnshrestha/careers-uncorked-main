@@ -17,10 +17,10 @@ function App() {
         <JoinUsModal/>
         <NavBar/>
         <Route exact path= '/' component={HomePage} />
-        <Route exact path={process.env.PUBLIC_URL +'/stories'} component={StoriesPage} />
-        <Route exact path={process.env.PUBLIC_URL +'/podcast'} component={PodcastPage} />
-        <Route exact path={process.env.PUBLIC_URL +'/about'} component={AboutPage} />
-        <Route exact path={process.env.PUBLIC_URL +'/blogs'} component={BlogsPage} />
+        <Route path='/stories' component={StoriesPage} />
+        <Route path='/podcast' component={PodcastPage} />
+        <Route path='/about' component={AboutPage} />
+        <Route path='/blogs' component={BlogsPage} />
 
     </HashRouter>
   );
