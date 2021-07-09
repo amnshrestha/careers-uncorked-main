@@ -10,7 +10,9 @@ import "./index.css";
 
 const BlogsPage = () => {
     const changeNavColor = ()=>{
-        $(".navbar").css("background-color","rgb(15, 8, 80)")
+        $(".navbar").css("background-color","rgb(15, 8, 80)");
+        window.scrollTo(0, 0);
+
     }
     changeNavColor();
     const articleDesign = (articleList) => {

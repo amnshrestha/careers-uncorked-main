@@ -12,7 +12,9 @@ import $ from 'jquery';
 const PodcastPage = () => {
     
     const changeNavColor = ()=>{
-        $(".navbar").css("background-color","#808080")
+        $(".navbar").css("background-color","#808080");
+        window.scrollTo(0, 0);
+
     }
 
     const modalForPodcast = ()=>{

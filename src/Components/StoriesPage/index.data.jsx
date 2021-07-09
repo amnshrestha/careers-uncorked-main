@@ -9,7 +9,8 @@ const FetchStoriesFromYoutube = () =>{
     const [dataPrepared, setDataPrepared] = useState(false);
 
     useEffect(() => {
-        
+
+        const url = "https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=PLIy7-i_9rAyQ9teMuV1dJHWuVcsW5y39o&key="+process.env.REACT_APP_YOUTUBE_API_KEY;
         FetchService.GET(url)
         .then((res) => {
             if(Object.keys(res).length > 0 && !dataFound){

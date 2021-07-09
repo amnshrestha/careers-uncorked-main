@@ -11,7 +11,8 @@ import "./index.css"
 
 const AboutPage = () => {
     const changeNavColor = ()=>{
-        $(".navbar").css("background-color","rgb(255, 230,150)")
+        $(".navbar").css("background-color","rgb(255, 230,150)");
+        window.scrollTo(0, 0);
     }
     changeNavColor();
     const memberDesign = (memberList) => {

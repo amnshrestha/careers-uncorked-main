@@ -18,7 +18,9 @@ const ContactCard= () => {
             <div className="allContent" >
                 <div className="mainTitle">SIGN UP</div>
                 <div className="subTitle">TO OUR MAILING LIST</div>
-                <a href="#"><button type="button" class="btn btn-light signUp">Sign Up</button></a>
+                <button type="button" className="btn btn-light signUp" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Sign Up
+                </button>
             </div>
         </section>
 
@@ -29,7 +31,9 @@ const ContactCard= () => {
             <div className="allContent" >
                 <div className="mainTitle">SIGN UP</div>
                 <div className="subTitle">TO OUR MAILING LIST</div>
-                <a href="#"><button type="button" class="btn btn-light signUp">Sign Up</button></a>
+                <button type="button" className="btn btn-light signUp" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Sign Up
+                </button>            
             </div>
         </section>
         </>

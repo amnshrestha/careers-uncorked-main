@@ -51,9 +51,6 @@ const ProductCard = () => {
                         </a>
                         }
 
-                        {/* <a href={eachProduct.buttonLink} >
-                            <button type="button" class="btn btn-light product-button">{eachProduct.buttonText}</button>
-                        </a> */}
                         
 
                     </div>
@@ -114,9 +111,14 @@ const ProductCard = () => {
                         }
 
                         <div className="buttonMobile">
-                            <a href={eachProduct.buttonLink}>
-                                <button type="button" className="btn btn-light product-button">{eachProduct.buttonText}</button>
-                            </a>
+                        {eachProduct.newTab ?
+                        <a href={eachProduct.buttonLink} target="_blank">
+                            <button type="button" class="btn btn-light product-button">{eachProduct.buttonText}</button>
+                        </a>:
+                        <a href={eachProduct.buttonLink} >
+                            <button type="button" class="btn btn-light product-button">{eachProduct.buttonText}</button>
+                        </a>
+                        }
                         </div>
                 </div>
             )
