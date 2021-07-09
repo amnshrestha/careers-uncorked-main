@@ -5,8 +5,10 @@ import "./index.css"
 import uncorkedLogo from "../../../../assets/images/uncorkedLogoLarge.png"
 import aboutRightBG from "../../../../assets/images/Backgrounds/AboutRightBG.png"
 
+import $ from 'jquery';
 
 const AboutCard = () => {
+
     const backgroundStyle={
         backgroundImage: `url(${aboutRightBG})`,
         backgroundSize: 'cover',
@@ -35,6 +37,10 @@ const AboutCard = () => {
                         your stories to helps others.
                     </p>
                 </div>
+                <a href="/#/about">
+                    <button className="btn btn-light learnMore">Learn More</button>
+                </a>
+                
             </div>
         </section>
 
@@ -55,8 +61,10 @@ const AboutCard = () => {
                         network! Build relationships, uncork your potential and share 
                         your stories to helps others.
                     </p>
-                    <br/>
                 </div>
+                <a href="/#/about">
+                    <button className="btn btn-light learnMore">Learn More</button>
+                </a>
             </div>
         </section>
         </>

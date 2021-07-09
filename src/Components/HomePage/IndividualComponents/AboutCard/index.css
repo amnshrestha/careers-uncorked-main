@@ -39,6 +39,13 @@
     font-size: 20px;
 }
 
+#aboutCard .learnMore{
+    padding:10px 50px;
+    font-size: 20px;
+    background-color: #ffffff83;
+    border-radius: 24px;
+}
+
 @media only screen and (max-width: 600px) {
     #aboutCard{
         display: none;
@@ -67,5 +74,13 @@
     #aboutCardMobile .description{
         text-align: left;
         font-size: 16px;
+    }
+
+    #aboutCardMobile .learnMore{
+        padding:5px 20px;
+        font-size: 15px;
+        background-color: #ffffff83;
+        border-radius: 24px;
+        margin-bottom: 30px;
     }
 }

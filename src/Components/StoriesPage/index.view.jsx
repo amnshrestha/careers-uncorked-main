@@ -13,7 +13,7 @@ import $ from 'jquery';
 const StoriesPage = () => {
 
     const changeNavColor = ()=>{
-        $(".navbar").css("background-color","#FFE696")
+        $(".navbar").css("background-color","rgb(255, 230,150)")
     }
     changeNavColor();
 
