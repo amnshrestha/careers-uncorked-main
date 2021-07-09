@@ -9,7 +9,7 @@ const ProductCard = () => {
         return (
             logoList.map(eachLogo=>{
                 return (
-                    <a href={eachLogo.logoLink}>
+                    <a href={eachLogo.logoLink} target="_blank">
                         <img src={eachLogo.logoImage} alt="eachLogo" className="smallLogo"/>
                     </a>
                 )
@@ -42,9 +42,18 @@ const ProductCard = () => {
                             </div>
                         }
 
-                        <a href={eachProduct.buttonLink}>
+                        {eachProduct.newTab ?
+                        <a href={eachProduct.buttonLink} target="_blank">
+                            <button type="button" class="btn btn-light product-button">{eachProduct.buttonText}</button>
+                        </a>:
+                        <a href={eachProduct.buttonLink} >
                             <button type="button" class="btn btn-light product-button">{eachProduct.buttonText}</button>
                         </a>
+                        }
+
+                        {/* <a href={eachProduct.buttonLink} >
+                            <button type="button" class="btn btn-light product-button">{eachProduct.buttonText}</button>
+                        </a> */}
                         
 
                     </div>

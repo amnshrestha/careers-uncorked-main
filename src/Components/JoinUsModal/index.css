@@ -1,0 +1,13 @@
+#exampleModal .iframeWindow{
+    width:560px;
+    height:315px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #exampleModal .iframeWindow{
+        width:330px;
+        height:315px;
+    }
+
+}

@@ -54,11 +54,36 @@
     margin: 40px auto;
 }
 
+#PodcastPage .podcastIframe{
+    width:560px;
+    height:315px;
+}
+
 @media only screen and (max-width: 600px) {
+    #PodcastPage .pageTitle{
+        width: 100%;
+        margin-top: 12px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    #PodcastPage .tuneIn{
+        width: 180px;
+        font-size: 16px;
+        background-color: #ffffffc9;
+        border-radius: 24px;
+        margin: 0 auto;
+    }
+
     #PodcastPage .description{
         width: 80%;
         font-size: 20px;
         margin: 0 auto;
         text-align: center;
+    }
+
+    #PodcastPage .podcastIframe{
+        width:330px;
+        height:315px;
     }
 }

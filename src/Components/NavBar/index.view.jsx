@@ -1,7 +1,7 @@
 import React from 'react'
 
 import uncorkedLogo from "../../assets/images/uncorkedLogo.png"
-import bubbles from "../../assets/images/NavBarBackgrounds/Bubbles.png"
+import bubbles from "../../assets/images/NavBarBackgrounds/NavBArBG2.png"
 import "./index.css"
 
 const NavBar = () => {
@@ -39,10 +39,10 @@ const NavBar = () => {
                             <a className="nav-link nostyle" aria-current="page" href="/#/podcast">Podcast</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link nostyle" aria-current="page" href="#">Blogs</a>
+                            <a className="nav-link nostyle" aria-current="page" href="/#/blogs">Blogs</a>
                         </li>
-                        <li className="nav-item" id="join-us-button">
-                            <a className="nav-link nostyle"  aria-current="page" href="#">Join Us</a>
+                        <li className="nav-item" id="join-us-button" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+                            <a className="nav-link nostyle"  aria-current="page">Join Us</a>
                         </li>
                     </ul>
                 </div>

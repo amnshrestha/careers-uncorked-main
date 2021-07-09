@@ -30,9 +30,7 @@ const IntroCard = () => {
                     <div className="mainTitle">CAREERS UNCORKED</div>
                     <div className="subTitle">ONE COMMUNITY, WHERE JOURNEYS CONVERGE</div>
                     <p className="description">Sign up to our mailing list to receive reminder for our upcoming events</p>
-                    <a href="#">
-                        <button type="button" class="btn btn-light signUp">Sign Up</button>
-                    </a>
+                        <button type="button" class="btn btn-light signUp" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign Up</button>
                 </div>
             </section>
 
@@ -41,9 +39,9 @@ const IntroCard = () => {
                     <div className="mainTitle">CAREERS UNCORKED</div>
                     <div className="subTitle">ONE COMMUNITY, WHERE JOURNEYS CONVERGE</div>
                     <p className="description">Sign up to our mailing list to receive reminder for our upcoming events</p>
-                    <a href="#">
-                        <button type="button" className="btn btn-light signUp">Sign Up</button>
-                    </a>
+                    
+                        <button type="button" className="btn btn-light signUp" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign Up</button>
+                    
                 </div>
             </section>
         </>

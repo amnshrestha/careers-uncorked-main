@@ -30,7 +30,8 @@
     #ContactFooter{
         background-color: #D1D0D0;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
+        text-align: center;
         height: 20vh;
         padding: 10px 10px;
     }

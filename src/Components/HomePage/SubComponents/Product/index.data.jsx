@@ -42,6 +42,7 @@ const allProducts = [
         ],
         buttonText:"View Livestream",
         buttonLink:"/#/stories",
+        newTab:false,
         mainPic:SharfuzAndSid,
         pictureName:"Sharfuz Sifat & Sidhant Ahluwalia",
         picturePosition:"Co-Hosts",
@@ -54,7 +55,8 @@ const allProducts = [
         description:"FIND OUR INSIGNT ON THINGS FROM GETTING AN MBA TO MAKING THE MOST OF COLLEGE DURING A PANDEMIC",
         logos:[],
         buttonText:"View Blogs",
-        buttonLink:"#",
+        buttonLink:"/#/blogs",
+        newTab:false,
         mainPic:MichellePic,
         pictureName:"Michelle Shue",
         picturePosition:"Chief Writer",
@@ -68,15 +70,16 @@ const allProducts = [
         logos:[
             {
                 logoImage:applePodcast,
-                logoLink:"/#/podcast"
+                logoLink:"https://podcasts.apple.com/us/podcast/international-perspective/id1530826037"
             },
             {
                 logoImage:spotify,
-                logoLink:"#"
+                logoLink:"https://open.spotify.com/show/4uLoEGRhygXeysDvvAadx8"
             }
         ],
         buttonText:"View Podcast",
-        buttonLink:"#",
+        buttonLink:"/#/podcast",
+        newTab:false,
         mainPic:DanielPic,
         pictureName:"Daniel Munoz Huerta",
         picturePosition:"Podcast Host",
@@ -115,7 +118,8 @@ const allProducts = [
             }
         ],
         buttonText:"Follow Us",
-        buttonLink:"#",
+        buttonLink:"https://www.linkedin.com/company/careers-uncorked",
+        newTab:true,
         mainPic:linkedInLogo,
         backupColor:"#284CCA",
         backgroundImage:homepageLinkedInBG,
