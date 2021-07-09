@@ -37,7 +37,7 @@ const AboutCard = () => {
                         your stories to helps others.
                     </p>
                 </div>
-                <a href={process.env.PUBLIC_URL +'/about'}>
+                <a href='/about'>
                     <button className="btn btn-light learnMore">Learn More</button>
                 </a>
                 
@@ -62,7 +62,7 @@ const AboutCard = () => {
                         your stories to helps others.
                     </p>
                 </div>
-                <a href={process.env.PUBLIC_URL +'/about'}>
+                <a href='/about'>
                     <button className="btn btn-light learnMore">Learn More</button>
                 </a>
             </div>
